@@ -323,7 +323,7 @@ const Modal = ({ title, onClose, children }: { title: string; onClose: () => voi
 // Reusable form fields
 const FormFields = ({ fields, data, onChange }: {
   fields: { key: string; label: string; textarea?: boolean }[];
-  data: Record<string, string>;
+  data: Record<string, unknown>;
   onChange: (key: string, value: string) => void;
 }) => (
   <div className="space-y-3">
