@@ -1,0 +1,40 @@
+import { Link } from "react-router-dom";
+
+const Footer = () => (
+  <footer className="bg-foreground text-primary-foreground">
+    <div className="content-max px-4 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 className="font-heading text-lg font-bold mb-4">
+            Inspire<span className="text-primary">One</span>
+          </h3>
+          <p className="text-sm opacity-70 leading-relaxed">
+            Guiding students to the best colleges for Engineering, Medical, and Management programs across India.
+          </p>
+        </div>
+        <div>
+          <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider">Quick Links</h4>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li><Link to="/courses" className="hover:opacity-100 transition-opacity">Courses</Link></li>
+            <li><Link to="/colleges" className="hover:opacity-100 transition-opacity">Colleges</Link></li>
+            <li><Link to="/about" className="hover:opacity-100 transition-opacity">About Us</Link></li>
+            <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider">Contact</h4>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>info@inspireone.com</li>
+            <li>+91-9876543210</li>
+            <li>India</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mt-10 pt-6 border-t border-primary-foreground/10 text-center text-xs opacity-50">
+        © {new Date().getFullYear()} Inspire One Educational Services. All rights reserved.
+      </div>
+    </div>
+  </footer>
+);
+
+export default Footer;
