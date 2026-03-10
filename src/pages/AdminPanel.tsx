@@ -321,9 +321,10 @@ const Modal = ({ title, onClose, children }: { title: string; onClose: () => voi
 );
 
 // Reusable form fields
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const FormFields = ({ fields, data, onChange }: {
   fields: { key: string; label: string; textarea?: boolean }[];
-  data: Record<string, unknown>;
+  data: any;
   onChange: (key: string, value: string) => void;
 }) => (
   <div className="space-y-3">
