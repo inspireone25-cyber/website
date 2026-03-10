@@ -6,23 +6,23 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="font-heading text-lg font-bold mb-4">
-            Inspire<span className="text-primary">One</span>
+            Inspire<span className="text-secondary">One</span>
           </h3>
           <p className="text-sm opacity-70 leading-relaxed">
             Guiding students to the best colleges for Engineering, Medical, and Management programs across India.
           </p>
         </div>
         <div>
-          <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider">Quick Links</h4>
+          <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider text-secondary">Quick Links</h4>
           <ul className="space-y-2 text-sm opacity-70">
-            <li><Link to="/courses" className="hover:opacity-100 transition-opacity">Courses</Link></li>
-            <li><Link to="/colleges" className="hover:opacity-100 transition-opacity">Colleges</Link></li>
-            <li><Link to="/about" className="hover:opacity-100 transition-opacity">About Us</Link></li>
-            <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
+            <li><Link to="/courses" className="hover:text-secondary transition-colors">Courses</Link></li>
+            <li><Link to="/colleges" className="hover:text-secondary transition-colors">Colleges</Link></li>
+            <li><Link to="/about" className="hover:text-secondary transition-colors">About Us</Link></li>
+            <li><Link to="/contact" className="hover:text-secondary transition-colors">Contact</Link></li>
           </ul>
         </div>
         <div>
-          <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider">Contact</h4>
+          <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider text-secondary">Contact</h4>
           <ul className="space-y-2 text-sm opacity-70">
             <li>info@inspireone.com</li>
             <li>+91-9876543210</li>

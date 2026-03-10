@@ -1,27 +1,33 @@
-const ContactPage = () => (
-  <div className="section-padding">
-    <div className="content-max max-w-3xl">
-      <h1 className="font-heading text-4xl font-bold text-foreground mb-6">Contact Us</h1>
-      <p className="text-muted-foreground mb-10">
-        Have questions? Reach out and our team will get back to you within 24 hours.
-      </p>
+import { Mail, Phone, Clock, MapPin } from "lucide-react";
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        <div className="bg-muted rounded-lg p-6">
-          <h3 className="font-heading font-semibold text-foreground mb-2">Email</h3>
-          <p className="text-muted-foreground text-sm">info@inspireone.com</p>
-        </div>
-        <div className="bg-muted rounded-lg p-6">
-          <h3 className="font-heading font-semibold text-foreground mb-2">Phone</h3>
-          <p className="text-muted-foreground text-sm">+91-9876543210</p>
-        </div>
-        <div className="bg-muted rounded-lg p-6">
-          <h3 className="font-heading font-semibold text-foreground mb-2">Office Hours</h3>
-          <p className="text-muted-foreground text-sm">Mon – Sat, 9:00 AM – 6:00 PM IST</p>
-        </div>
-        <div className="bg-muted rounded-lg p-6">
-          <h3 className="font-heading font-semibold text-foreground mb-2">Location</h3>
-          <p className="text-muted-foreground text-sm">India</p>
+const contacts = [
+  { icon: <Mail size={22} />, title: "Email", info: "info@inspireone.com", color: "text-primary", cardClass: "card-teal" },
+  { icon: <Phone size={22} />, title: "Phone", info: "+91-9876543210", color: "text-secondary", cardClass: "card-orange" },
+  { icon: <Clock size={22} />, title: "Office Hours", info: "Mon – Sat, 9:00 AM – 6:00 PM IST", color: "text-primary", cardClass: "card-teal" },
+  { icon: <MapPin size={22} />, title: "Location", info: "India", color: "text-secondary", cardClass: "card-orange" },
+];
+
+const ContactPage = () => (
+  <div>
+    <div className="hero-gradient-strong py-12 px-4">
+      <div className="content-max max-w-3xl">
+        <h1 className="font-heading text-4xl font-bold text-primary-foreground mb-3">Contact Us</h1>
+        <p className="text-primary-foreground/80">
+          Have questions? Reach out and our team will get back to you within 24 hours.
+        </p>
+      </div>
+    </div>
+
+    <div className="section-padding">
+      <div className="content-max max-w-3xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {contacts.map((c) => (
+            <div key={c.title} className={`${c.cardClass} bg-background rounded-lg p-6 border border-border`}>
+              <div className={`${c.color} mb-3`}>{c.icon}</div>
+              <h3 className="font-heading font-semibold text-foreground mb-1">{c.title}</h3>
+              <p className="text-muted-foreground text-sm">{c.info}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

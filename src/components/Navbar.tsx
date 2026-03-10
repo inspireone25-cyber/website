@@ -15,39 +15,35 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border">
+    <header className="sticky top-0 z-50 bg-primary border-b border-primary-glow/20 shadow-sm">
       <div className="content-max flex items-center justify-between h-16 px-4">
-        {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-heading text-xl font-bold text-foreground tracking-tight">
-            Inspire<span className="text-primary">One</span>
+          <span className="font-heading text-xl font-bold text-primary-foreground tracking-tight">
+            Inspire<span className="text-secondary">One</span>
           </span>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary" : "text-foreground"
+              className={`text-sm font-medium transition-colors ${
+                location.pathname === link.to
+                  ? "text-secondary"
+                  : "text-primary-foreground/80 hover:text-secondary"
               }`}
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/inquiry"
-            className="bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
-          >
+          <Link to="/inquiry" className="btn-orange !px-5 !py-2 text-sm">
             Start Your Inquiry
           </Link>
         </nav>
 
-        {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-primary-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -55,16 +51,17 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Nav */}
       {mobileOpen && (
-        <nav className="md:hidden border-t border-border bg-background px-4 pb-4">
+        <nav className="md:hidden bg-primary border-t border-primary-glow/20 px-4 pb-4">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               onClick={() => setMobileOpen(false)}
-              className={`block py-3 text-sm font-medium border-b border-border transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary" : "text-foreground"
+              className={`block py-3 text-sm font-medium border-b border-primary-glow/10 transition-colors ${
+                location.pathname === link.to
+                  ? "text-secondary"
+                  : "text-primary-foreground/80 hover:text-secondary"
               }`}
             >
               {link.label}
@@ -73,7 +70,7 @@ const Navbar = () => {
           <Link
             to="/inquiry"
             onClick={() => setMobileOpen(false)}
-            className="mt-3 block text-center bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-medium"
+            className="btn-orange mt-3 block text-center !py-2 text-sm"
           >
             Start Your Inquiry
           </Link>
