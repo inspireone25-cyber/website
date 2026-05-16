@@ -41,7 +41,7 @@ const AdminLoginPage = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@inspireone.com"
+                {/* placeholder="admin@inspireone.com" */}
                 className="w-full border border-border rounded-md px-4 py-2.5 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary"
               />
             </div>
@@ -62,7 +62,6 @@ const AdminLoginPage = () => {
           </form>
 
           <p className="mt-6 text-xs text-muted-foreground text-center">
-            Default: admin@inspireone.com / admin123
           </p>
         </div>
       </div>
