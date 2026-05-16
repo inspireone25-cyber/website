@@ -18,9 +18,14 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-primary border-b border-primary-glow/20 shadow-sm">
       <div className="content-max flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-heading text-xl font-bold text-primary-foreground tracking-tight">
+        <img 
+        src="/logo-header.png"
+        alt="Inspire One Logo"
+        style={{ height: "60px", width: "auto" }}
+      />
+          {/* <span className="font-heading text-xl font-bold text-primary-foreground tracking-tight">
             Inspire<span className="text-secondary">One</span>
-          </span>
+          </span> */}
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

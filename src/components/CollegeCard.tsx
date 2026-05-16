@@ -32,14 +32,14 @@ const CollegeCard = ({ college, index = 0 }: { college: College; index?: number 
           <Phone size={12} className="text-secondary" />
           {college.contact_number}
         </span>
-        <a
+        {/* <a
           href={college.website}
           target="_blank"
           rel="noopener noreferrer"
           className="text-secondary font-semibold hover:underline flex items-center gap-1"
         >
-          Visit Website <ExternalLink size={12} />
-        </a>
+          Visit Website <ExternalLink size={12} /> */}
+        {/* </a> */}
       </div>
     </div>
   );

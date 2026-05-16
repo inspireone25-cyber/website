@@ -12,9 +12,9 @@ const testimonials = [
 ];
 
 const stats = [
-  { icon: <GraduationCap size={28} />, value: "500+", label: "Students Placed", iconColor: "text-primary" },
-  { icon: <Building2 size={28} />, value: "50+", label: "Partner Colleges", iconColor: "text-secondary" },
-  { icon: <Users size={28} />, value: "10+", label: "Years Experience", iconColor: "text-primary" },
+  { icon: <GraduationCap size={28} />, value: "1500+", label: "Students Placed", iconColor: "text-primary" },
+  { icon: <Building2 size={28} />, value: "20+", label: "Partner Colleges", iconColor: "text-secondary" },
+  { icon: <Users size={28} />, value: "12+", label: "Years Experience", iconColor: "text-primary" },
   { icon: <Award size={28} />, value: "95%", label: "Success Rate", iconColor: "text-secondary" },
 ];
 
@@ -27,7 +27,7 @@ const Index = () => {
       {/* Hero */}
       <section className="hero-gradient section-padding bg-shape-teal">
         <div className="content-max text-center relative z-10">
-          <div className="inline-block badge-orange mb-4">Trusted by 500+ Students</div>
+          <div className="inline-block badge-orange mb-4">Trusted by 1500+ Students</div>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
             Build Your Future With<br />
             <span className="hero-gradient-strong bg-clip-text text-transparent">Inspire One</span> Educational Services

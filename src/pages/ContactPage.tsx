@@ -1,10 +1,10 @@
 import { Mail, Phone, Clock, MapPin } from "lucide-react";
 
 const contacts = [
-  { icon: <Mail size={22} />, title: "Email", info: "info@inspireone.com", color: "text-primary", cardClass: "card-teal" },
-  { icon: <Phone size={22} />, title: "Phone", info: "+91-9876543210", color: "text-secondary", cardClass: "card-orange" },
+  { icon: <Mail size={22} />, title: "Email", info: "inspireone25@gmail.com", color: "text-primary", cardClass: "card-teal" },
+  { icon: <Phone size={22} />, title: "Phone", info: "+91 81433 61616", color: "text-secondary", cardClass: "card-orange" },
   { icon: <Clock size={22} />, title: "Office Hours", info: "Mon – Sat, 9:00 AM – 6:00 PM IST", color: "text-primary", cardClass: "card-teal" },
-  { icon: <MapPin size={22} />, title: "Location", info: "India", color: "text-secondary", cardClass: "card-orange" },
+  { icon: <MapPin size={22} />, title: "Location", info: "Flat No. 104, United Elite Apartment, Kavuri Hills, Madhapur, Hyderabad, Telangana , India – 500033", color: "text-secondary", cardClass: "card-orange" },
 ];
 
 const ContactPage = () => (

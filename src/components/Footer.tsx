@@ -24,14 +24,14 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm font-semibold mb-4 uppercase tracking-wider text-secondary">Contact</h4>
           <ul className="space-y-2 text-sm opacity-70">
-            <li>info@inspireone.com</li>
-            <li>+91-9876543210</li>
-            <li>India</li>
+            <li>inspireone25@gmail.com</li>
+            <li>+91 81433 61616</li>
+            <li>Flat No. 104, United Elite Apartment, Kavuri Hills, Madhapur, Hyderabad, Telangana , India – 500033</li>
           </ul>
         </div>
       </div>
       <div className="mt-10 pt-6 border-t border-primary-foreground/10 text-center text-xs opacity-50">
-        © {new Date().getFullYear()} Inspire One Educational Services. All rights reserved.
+        © 2024 Inspire One Educational Services. All rights reserved.
       </div>
     </div>
   </footer>

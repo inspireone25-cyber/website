@@ -45,9 +45,9 @@ const AboutPage = () => (
           <h2 className="section-heading font-heading text-xl font-semibold mb-6">Why Students Trust Us</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-4">
             {[
-              { value: "500+", label: "Students Placed", color: "text-primary" },
-              { value: "50+", label: "Partner Colleges", color: "text-secondary" },
-              { value: "10+", label: "Years Experience", color: "text-primary" },
+              { value: "1500+", label: "Students Placed", color: "text-primary" },
+              { value: "20+", label: "Partner Colleges", color: "text-secondary" },
+              { value: "12+", label: "Years Experience", color: "text-primary" },
             ].map((s) => (
               <div key={s.label} className="text-center">
                 <p className={`font-heading text-3xl font-bold ${s.color}`}>{s.value}</p>
