@@ -1,4 +1,3 @@
-```tsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { validateAdmin, loginAdmin } from "@/lib/data";
@@ -87,4 +86,4 @@ const AdminLoginPage = () => {
 };
 
 export default AdminLoginPage;
-```
+
